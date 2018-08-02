@@ -1,77 +1,406 @@
-html, body { padding: 0; margin: 0; height: 100%; width: 100%; background: white; }
+@font-face {
+  font-family: Yellowtail;
+  src: url("../Fonts/Yellowtail-Regular.otf");
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+}
 
-.comeback { height: 80px; width: 80px; position: fixed; bottom: 80px; left: 60px; background: white; border-radius: 50%; }
-.comeback .top { display: inline-block; width: 80px; height: 80px; border: 6px solid black; border-radius: 50%; text-align: center; }
-.comeback .top:hover { border: 6px solid #7e7e7e; }
-.comeback .top:hover:after { border-top: 6px solid #7e7e7e; border-right: 6px solid #7e7e7e; }
-.comeback .top:after { content: ''; display: inline-block; margin-top: 40%; width: 20px; height: 20px; border-top: 6px solid black; border-right: 6px solid black; -moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+.comeback {
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  bottom: 80px;
+  left: 60px;
+  background: white;
+  border-radius: 50%;
+}
+.comeback .top {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 6px solid black;
+  border-radius: 50%;
+  text-align: center;
+}
+.comeback .top:hover {
+  border: 6px solid #7e7e7e;
+}
+.comeback .top:hover:after {
+  border-top: 6px solid #7e7e7e;
+  border-right: 6px solid #7e7e7e;
+}
+.comeback .top:after {
+  content: '';
+  display: inline-block;
+  margin-top: 40%;
+  width: 20px;
+  height: 20px;
+  border-top: 6px solid black;
+  border-right: 6px solid black;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
 
-.lang { margin-top: 2%; margin-right: 5%; text-align: right; }
-.lang a { font-family: "Courier New", Courier, monospace; color: black; text-decoration: none; }
+.lang {
+  margin-top: 2%;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  text-align: right;
+}
+.lang a {
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  text-decoration: none;
+}
 
-.logo { margin-left: 5%; margin-bottom: 50px; }
-.logo p { font-size: 30px; font-family: "Courier New", Courier, monospace; }
+.logo {
+  margin-left: 6%;
+  margin-bottom: 40px;
+}
+.logo p {
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1;
+}
 
-.pages_href { width: 100%; text-align: center; }
+.pages_href {
+  width: 100%;
+  text-align: center;
+}
 
-.navigation_bar > li { display: inline-block; }
-.navigation_bar > li a { margin-left: 50px; text-decoration: none; color: black; font-size: 20px; font-family: "Courier New", Courier, monospace; }
+.navigation_bar > li {
+  display: inline-block;
+}
+.navigation_bar > li a {
+  margin-left: 50px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
 
-#photo { margin-top: 50%; padding: 0; width: 100%; background: white; justify-content: center; align-items: center; text-align: center; }
-#photo .space { height: 50px; background: white; }
-#photo img:hover { transform: scale(1.1); }
-#photo img { max-width: 100%; max-height: 100%; }
-#photo .photo1, #photo .photo2, #photo .photo3 { height: 500px; width: 333px; display: inline-block; margin-left: 10px; margin-top: 10px; margin-bottom: 10px; margin-right: 10px; }
-#photo .photo4, #photo .photo5, #photo .photo6 { height: 500px; width: 333px; display: inline-block; margin-left: 10px; margin-top: 10px; margin-bottom: 10px; margin-right: 10px; }
-#photo .photo7, #photo .photo8, #photo .photo9 { height: 500px; width: 333px; display: inline-block; margin-left: 10px; margin-top: 10px; margin-bottom: 10px; margin-right: 10px; }
-#photo .photo10, #photo .photo11, #photo .photo12 { height: 500px; width: 333px; display: inline-block; margin-left: 10px; margin-top: 10px; margin-bottom: 10px; margin-right: 10px; }
+#photo {
+  margin-top: 50%;
+  padding: 0;
+  width: 100%;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#photo .space {
+  height: 50px;
+  background: white;
+}
+#photo img:hover {
+  transform: scale(1.05);
+}
+#photo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#photo .photo1, #photo .photo2, #photo .photo3 {
+  height: 500px;
+  width: 333px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+#photo .photo4, #photo .photo5, #photo .photo6 {
+  height: 500px;
+  width: 333px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+#photo .photo7, #photo .photo8, #photo .photo9 {
+  height: 500px;
+  width: 333px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+#photo .photo10, #photo .photo11, #photo .photo12 {
+  height: 500px;
+  width: 333px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
 
-#inf { padding: 0; margin-top: 50%; width: 100%; background: white; text-align: center; }
-#inf .product { margin-bottom: 30px; color: black; font-size: 26px; font-family: "Courier New", Courier, monospace; }
-#inf .ind { padding: 0; margin-left: auto; margin-right: auto; height: 200px; width: 800px; background: white; overflow: auto; }
-#inf .ind .forii { padding: 0%; margin: 0; width: 100%; background: white; height: 100%; display: block; }
-#inf .ind .forii img { float: left; margin-left: 30px; margin-top: 30px; margin-right: 30px; }
-#inf .ind .forii p { font-size: 15px; font-family: "Courier New", Courier, monospace; }
-#inf .lvst { padding: 0; margin-left: auto; margin-right: auto; height: 200px; width: 800px; background: white; overflow: auto; }
-#inf .lvst .foril { padding: 0%; margin: 0; width: 100%; background: white; height: 100%; display: block; }
-#inf .lvst .foril img { float: left; margin-left: 30px; margin-top: 30px; margin-right: 30px; }
-#inf .lvst .foril p { font-size: 15px; font-family: "Courier New", Courier, monospace; }
-#inf .cert { padding: 0; margin-left: auto; margin-right: auto; height: 200px; width: 800px; background: white; overflow: auto; }
-#inf .cert .foric { padding: 0%; margin: 0; width: 100%; background: white; height: 100%; display: block; }
-#inf .cert .foric img { float: left; margin-left: 30px; margin-top: 30px; margin-right: 30px; }
-#inf .cert .foric p { font-size: 15px; font-family: "Courier New", Courier, monospace; }
-#inf .brand { padding: 0; margin-left: auto; margin-right: auto; height: 200px; width: 800px; background: white; overflow: auto; }
-#inf .brand .forib { padding: 0%; margin: 0; width: 100%; background: white; height: 100%; display: block; }
-#inf .brand .forib img { float: left; margin-left: 30px; margin-top: 30px; margin-right: 30px; }
-#inf .brand .forib p { font-size: 15px; font-family: "Courier New", Courier, monospace; }
+#inf {
+  padding: 0;
+  margin-top: 50%;
+  width: 100%;
+  background: white;
+  text-align: center;
+}
+#inf .product {
+  margin-bottom: 30px;
+  color: black;
+  font-size: 26px;
+  font-family: "Courier New", Courier, monospace;
+}
+#inf .ind {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 800px;
+  background: white;
+  overflow: auto;
+}
+#inf .ind .forii {
+  padding: 0%;
+  margin: 0;
+  width: 100%;
+  background: white;
+  height: 100%;
+  display: block;
+}
+#inf .ind .forii img {
+  float: left;
+  margin-left: 30px;
+  margin-top: 35px;
+  margin-right: 30px;
+}
+#inf .ind .forii p {
+  text-align: left;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+#inf .lvst {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 800px;
+  background: white;
+  overflow: auto;
+}
+#inf .lvst .foril {
+  padding: 0%;
+  margin: 0;
+  width: 100%;
+  background: white;
+  height: 100%;
+  display: block;
+}
+#inf .lvst .foril img {
+  float: left;
+  margin-left: 30px;
+  margin-top: 35px;
+  margin-right: 30px;
+}
+#inf .lvst .foril p {
+  text-align: left;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+#inf .cert {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 800px;
+  background: white;
+  overflow: auto;
+}
+#inf .cert .foric {
+  padding: 0%;
+  margin: 0;
+  width: 100%;
+  background: white;
+  height: 100%;
+  display: block;
+}
+#inf .cert .foric img {
+  float: left;
+  margin-left: 30px;
+  margin-top: 35px;
+  margin-right: 30px;
+}
+#inf .cert .foric p {
+  text-align: left;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+#inf .brand {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 800px;
+  background: white;
+  overflow: auto;
+}
+#inf .brand .forib {
+  padding: 0%;
+  margin: 0;
+  width: 100%;
+  background: white;
+  height: 100%;
+  display: block;
+}
+#inf .brand .forib img {
+  float: left;
+  margin-left: 30px;
+  margin-top: 35px;
+  margin-right: 30px;
+}
+#inf .brand .forib p {
+  text-align: left;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
 
-#about { margin-top: 50%; width: 100%; background: white; text-align: center; }
-#about .space { font-size: black; height: 50px; background: white; margin-bottom: 50px; font-family: "Courier New", Courier, monospace; }
-#about .aboutme { margin-left: auto; margin-right: auto; height: 500px; width: 900px; background: white; }
-#about .aboutme img { max-width: 100%; max-height: 100%; display: block; float: left; }
-#about .aboutme p { font-size: 10px; font-family: "Courier New", Courier, monospace; margin-left: 450px; }
+#about {
+  margin-top: 50%;
+  width: 100%;
+  background: white;
+  text-align: center;
+}
+#about .space {
+  font-size: black;
+  height: 50px;
+  background: white;
+  margin-bottom: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+#about .aboutme {
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  width: 900px;
+  background: white;
+}
+#about .aboutme img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  float: left;
+}
+#about .aboutme p {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 450px;
+}
 
-#callback { margin-top: 50%; width: 100%; background: white; height: 100px; text-align: center; }
-#callback .social, #callback .form-horizontal { display: inline-block; }
-#callback .social { position: relative; bottom: 200px; font-size: 20px; }
-#callback .h3 { margin-bottom: 60px; color: black; font-size: black; font-family: "Courier New", Courier, monospace; }
-#callback .form-horizontal { text-align: left; width: 250px; margin-left: 10%; border: 2px solid black; }
+#callback {
+  margin-top: 50%;
+  width: 100%;
+  background: white;
+  height: 100px;
+  text-align: center;
+}
+#callback .social, #callback .form-horizontal {
+  display: inline-block;
+}
+#callback .social {
+  position: relative;
+  bottom: 170px;
+  font-size: 20px;
+}
+#callback .h3 {
+  margin-bottom: 60px;
+  color: black;
+  font-size: black;
+  font-family: "Courier New", Courier, monospace;
+}
+#callback .form-horizontal {
+  text-align: left;
+  width: 250px;
+  margin-left: 10%;
+  border: 2px solid black;
+}
 
-.footspace { height: 200px; }
+.footspace {
+  height: 200px;
+}
 
-@media screen and (max-width: 950px) { body, html { font-size: 15px; }
-  .comeback { display: none; }
-  .navigation_bar > li { display: block; font-size: 15px; }
-  .navigation_bar > li a { margin-left: 0%; font-size: 15px; }
-  .social, .form-horizontal { display: block; }
-  #inf { font-size: 15px; }
-  #inf .ind, #inf .lvst, #inf .cert, #inf .brand { width: 100%; height: 250px; font-size: 15px; }
-  #about { font-size: 15px; width: 100%; margin-bottom: 100%; }
-  #about .aboutme { text-align: center; justify-content: center; align-items: center; width: 100%; font-size: 15px; }
-  #about .aboutme img { margin-left: auto; margin-right: auto; float: none; }
-  #about .aboutme p { margin-left: auto; margin-right: auto; width: 80%; margin-top: 20px; font-size: 15px; }
-  #callback { font-size: 15px; }
-  #callback .social { position: static; bottom: 0; margin-bottom: 50px; font-size: 15px; }
-  .footspace { height: 0; } }
+@media screen and (max-width: 950px) {
+  body, html {
+    font-size: 15px;
+  }
+
+  .comeback {
+    display: none;
+  }
+
+  .navigation_bar > li {
+    display: block;
+    font-size: 15px;
+  }
+  .navigation_bar > li a {
+    margin-left: 0%;
+    font-size: 15px;
+  }
+
+  .social, .form-horizontal {
+    display: block;
+  }
+
+  #inf {
+    font-size: 15px;
+  }
+  #inf .ind, #inf .lvst, #inf .cert, #inf .brand {
+    width: 100%;
+    height: 250px;
+    font-size: 15px;
+  }
+
+  #about {
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 100%;
+  }
+  #about .aboutme {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+  }
+  #about .aboutme img {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+  #about .aboutme p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  #callback {
+    font-size: 15px;
+  }
+  #callback .social {
+    position: static;
+    bottom: 0;
+    margin-bottom: 50px;
+    font-size: 15px;
+  }
+
+  .footspace {
+    height: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
