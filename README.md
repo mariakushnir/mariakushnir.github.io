@@ -1,1 +1,1 @@
-# https://mariakushnir.github.io
+# http://mariakushnir.github.io
