@@ -60,7 +60,7 @@ $(document).ready(function () {
             hasBeenTrigged2 = true;
         };
         if ($(window).scrollTop() >= 3400 && !hasBeenTrigged3) {
-            $("#callback").animate({ marginTop:'150px'}, 1000);
+            $("#callback").animate({ marginTop:'70px'}, 1000);
             hasBeenTrigged3 = true;
         };
         if ($(window).scrollTop() <= $(window).height()) {
