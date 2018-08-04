@@ -3,10 +3,10 @@
 $(document).ready(function () {
 
     $(".href").hover(function () {
-        $(this).css('border-bottom','3px solid yellow')
+        $(this).css('border-bottom','2px solid yellow')
     });
     $(".href").mouseleave(function () {
-        $(this).css('border-bottom','2px solid white')
+        $(this).css('border-bottom','none')
     });
 
 
@@ -80,6 +80,12 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 1000);
+    });
+
+    $('a[href^=mailto]').click(function (event) {
+        event.preventDefault();
+        window.location.replace = $(this).attr('href');
+        return false;
     });
 
 });
