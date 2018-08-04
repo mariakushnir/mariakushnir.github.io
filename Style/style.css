@@ -149,6 +149,9 @@ html, body {
   background: white;
   text-align: center;
 }
+#inf span {
+  color: yellow;
+}
 #inf .product {
   margin-bottom: 30px;
   color: black;
@@ -293,6 +296,7 @@ html, body {
   max-height: 100%;
   display: block;
   float: left;
+  margin-left: 5%;
 }
 #about .aboutme p {
   font-size: 20px;
@@ -359,7 +363,7 @@ html, body {
   }
   #inf .ind, #inf .lvst, #inf .cert, #inf .brand {
     width: 100%;
-    height: 250px;
+    height: 300px;
     font-size: 15px;
   }
 
@@ -370,8 +374,6 @@ html, body {
   }
   #about .aboutme {
     text-align: center;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     font-size: 15px;
   }
