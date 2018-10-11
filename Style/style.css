@@ -328,7 +328,7 @@ html, body {
 }
 #callback .form-horizontal {
   text-align: left;
-  width: 270px;
+  width: 250px;
   margin-left: 10%;
   border: 2px solid black;
 }
@@ -399,6 +399,9 @@ html, body {
     bottom: 0;
     margin-bottom: 50px;
     font-size: 18px;
+  }
+  #callback .form-horizontal {
+    width: 270px;
   }
 
   .footspace {
