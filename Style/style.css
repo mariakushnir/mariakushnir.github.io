@@ -150,7 +150,8 @@ html, body {
   text-align: center;
 }
 #inf span {
-  color: yellow;
+  color: black;
+  border-bottom: 2px solid yellow;
 }
 #inf .product {
   margin-bottom: 30px;
@@ -338,7 +339,7 @@ html, body {
 
 @media screen and (max-width: 950px) {
   body, html {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .comeback {
@@ -347,11 +348,11 @@ html, body {
 
   .navigation_bar > li {
     display: block;
-    font-size: 15px;
+    font-size: 18px;
   }
   .navigation_bar > li a {
-    margin-left: 0%;
-    font-size: 15px;
+    margin-left: 0px;
+    font-size: 18px;
   }
 
   .social, .form-horizontal {
@@ -359,23 +360,23 @@ html, body {
   }
 
   #inf {
-    font-size: 15px;
+    font-size: 18px;
   }
   #inf .ind, #inf .lvst, #inf .cert, #inf .brand {
     width: 100%;
-    height: 300px;
-    font-size: 15px;
+    height: 320px;
+    font-size: 18px;
   }
 
   #about {
-    font-size: 15px;
+    font-size: 18px;
     width: 100%;
     margin-bottom: 100%;
   }
   #about .aboutme {
     text-align: center;
     width: 100%;
-    font-size: 15px;
+    font-size: 18px;
   }
   #about .aboutme img {
     margin-left: auto;
@@ -387,17 +388,17 @@ html, body {
     margin-right: auto;
     width: 80%;
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 18px;
   }
 
   #callback {
-    font-size: 15px;
+    font-size: 18px;
   }
   #callback .social {
     position: static;
     bottom: 0;
     margin-bottom: 50px;
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .footspace {

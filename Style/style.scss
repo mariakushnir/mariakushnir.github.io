@@ -2,7 +2,6 @@
 $bg : white;
 $fontcolor: black;
 
-
 @font-face{
     font-family: Yellowtail;
     src: url("../Fonts/Yellowtail-Regular.otf");
@@ -22,7 +21,7 @@ $fontfamilyproductinf: 'Courier New', Courier, monospace;
 $fontsizeaboutinf: 20px;
 $fontfamilyaboutinf: 'Courier New', Courier, monospace;
 
-$fontsizemedia: 15px;
+$fontsizemedia: 18px;
 
 html, body{
     padding: 0;
@@ -206,7 +205,8 @@ html, body{
 
     span{
         //font-weight: bold;
-        color: yellow;
+        color: black;
+        border-bottom: 2px solid yellow;
     }
 
     .product{
@@ -335,7 +335,7 @@ html, body{
         font-size: $fontsizemedia;
 
         a{
-            margin-left: 0%;
+            margin-left: 0px;
             font-size: $fontsizemedia;
         }
     }
@@ -349,7 +349,7 @@ html, body{
 
         .ind, .lvst, .cert, .brand{
             width: 100%;
-            height: 300px;
+            height: 320px;
             font-size: $fontsizemedia;
         }
     }
