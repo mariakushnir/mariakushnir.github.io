@@ -82,11 +82,19 @@ $(document).ready(function () {
         }, 1000);
     });
 
-    $('a[href^=mailto]').click(function (event) {
-        event.preventDefault();
-        window.location.replace = $(this).attr('href');
-        return false;
-    });
+    //$('a[href^=mailto]').click(function (event) {
+    //    event.preventDefault();
+    //    window.location.replace = $(this).attr('href');
+    //    return false;
+    //});
+
+    $("#send").on( "click ", function() {
+        var fi2 = $("#name").val();
+        var si2 = $("#phone").val();
+        var ti2 = $("#email").val();
+        var me2 = $("#message").val();
+        window.open('mailto:meelros91@gmail.com?subject=Фотосесія&body=Ім`я: '+fi2+'; Телефон: '+si2+'; Email: '+ti2+'; Повідомлення: '+me2+';');
+    })
 
 });
 
